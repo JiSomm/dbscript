@@ -6,8 +6,9 @@ import hmac
 import base64
 import os
 
-credential = DefaultAzureCredential()
-client = SecretClient(vault_url=os.getenv('VAULT_URL'), credential=credential)
+# DEPRECATED: AZURE VAULT_URL
+# credential = DefaultAzureCredential()
+# client = SecretClient(vault_url=os.getenv('VAULT_URL'), credential=credential)
 
 # Update the customer ID to your Log Analytics workspace ID
 customer_id = client.os.getenv('LAW_WORKSPACE_ID').value
