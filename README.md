@@ -1,6 +1,4 @@
-# dbscript
-
-Environment variables to set:
+# Environment variables to set:
 
 export LAW_WORKSPACE_ID=
 
