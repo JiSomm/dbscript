@@ -4,6 +4,7 @@ apt-get update
 apt-get install curl -y
 apt-get install gnupg -y
 apt-get install software-properties-common
+sudo apt install postgresql postgresql-contrib -y
 
 # INSTALL PYTHON
 
