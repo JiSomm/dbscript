@@ -12,7 +12,7 @@ user=$USER@$SERVER
 password=$(vault kv get -tls-skip-verify -field=password secrets/azure/databases/$SERVER)
 " >> ~/.my.cnf
 
-if mysql < ./quit.sql
+if mysql -e quit
   then
     export DATABASE="MySQL" 
     export STATUS="Active"
